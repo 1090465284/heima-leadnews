@@ -4,7 +4,13 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.heima.model.article.dtos.ArticleHomeDto;
 import com.heima.model.article.pojos.ApArticle;
 import com.heima.model.common.dtos.ResponseResult;
+import freemarker.template.TemplateException;
+
+import java.io.IOException;
 
 public interface ApArticleService extends IService<ApArticle> {
     public ResponseResult load(ArticleHomeDto dto, Short type);
+
+    void test() throws IOException, TemplateException;
+
 }

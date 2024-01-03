@@ -24,8 +24,8 @@ public class MinIOConfig {
     public MinioClient buildMinioClient() {
         return MinioClient
                 .builder()
-                .credentials(minIOConfigProperties.getAccessKey(), minIOConfigProperties.getSecretKey())
                 .endpoint(minIOConfigProperties.getEndpoint())
+                .credentials(minIOConfigProperties.getAccessKey(), minIOConfigProperties.getSecretKey())
                 .build();
     }
 }
