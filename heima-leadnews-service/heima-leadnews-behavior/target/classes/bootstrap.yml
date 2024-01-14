@@ -1,0 +1,12 @@
+server:
+  port: 51806
+spring:
+  application:
+    name: leadnews-behavior
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 8.130.46.60:8848
+      config:
+        server-addr: 8.130.46.60:8848
+        file-extension: yml

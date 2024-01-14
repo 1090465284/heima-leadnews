@@ -7,9 +7,14 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.Map;
+
 @FeignClient(value = "leadnews-article", fallback = IArticleClientFallback.class)
 public interface IArticleClient {
 
     @PostMapping("/api/v1/article/save")
     public ResponseResult saveArticle(@RequestBody ArticleDto articleDto);
+
+    @PostMapping("/api/v1/article/updateByMap")
+    public ResponseResult updateByMap(@RequestBody Map map);
 }

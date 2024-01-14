@@ -116,7 +116,7 @@ public class WmNews implements Serializable {
 
     @TableField("enable")
     private Short enable;
-
+    
      //状态枚举类
     @Alias("WmNewsStatus")
     public enum Status{

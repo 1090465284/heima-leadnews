@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>freemarker_demo</module>
+        <module>es-init</module>
     </modules>
 
 

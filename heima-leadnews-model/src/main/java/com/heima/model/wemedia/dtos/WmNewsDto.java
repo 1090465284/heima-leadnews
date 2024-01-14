@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 public class WmNewsDto {
-
+    
     private Integer id;
      /**
      * 标题
@@ -41,9 +41,14 @@ public class WmNewsDto {
      * 状态 提交为1  草稿为0
      */
     private Short status;
-
+     
      /**
      * 封面图片列表 多张图以逗号隔开
      */
     private List<String> images;
+
+    /**
+     * 是否上架  0 下架  1 上架
+     */
+    private Short enable;
 }

@@ -57,7 +57,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
         updateWmNews(wmNews, (short) 9, "审核成功");
     }
 
-    private ResponseResult saveAppArticle(WmNews wmNews) {
+    public ResponseResult saveAppArticle(WmNews wmNews) {
         ArticleDto articleDto = new ArticleDto();
         BeanUtils.copyProperties(wmNews, articleDto);
         articleDto.setLayout(wmNews.getType());
